@@ -16,10 +16,17 @@ def getAreaPrice(area):
     
     return Area_category[area]
 
+
 def calcDday (request):
     month_pay= request.POST['month_pay']
     month_spend= request.POST['month_spend']
     car=request.POST['car']
     area=request.POST['area']
     goal= request.POST['goal']
+    car_price=getCarPrice(car)
+    area_price=getAreaPrice(area)
+    total_price= car_price+area_price+goal
+    leftMonth= total_price//(month_pay-month_spend)
+    return leftMonth
+
     
