@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 상단바 -->
+    <div class="topdar">
+        <p style="font-size: 30px; padding-top: 10px;">퇴사 계산기</p>
+    </div>
+
+    <p style="font-size: 30px; color:#F24521; text-align: center; padding-top: 100px;">퇴사까지 얼마나 남았을까?</p>
+
+    <!-- 월급 입력 -->
+    <div class="input_salary">
+        당신의 현재 월급은?
+        <input type="text" class="salary" name="salary" placeholder="월급을 입력해주세요." required>
+    </div>
+
+    <!-- 차 선택 -->
+    <div class="input_car">
+        미래의 차를 선택해주세요.
+        <input class="car1" type="button" value="차 없어도 되요.">
+        <div class="select_car">
+            <table>
+                <tr>
+                    <td class="car2" style="border-radius:30px; width: 200px; height: 200px;">
+                        <img src="car/hyundai.png" width="200px" height="100px">
+                    </td>
+                    <td class="car3" style="border-radius:30px;width: 200px; height: 200px;">
+                        <img src="car/kia.png" width="200px" height="100px">
+                    </td>
+                    <td class="car4" style="border-radius:30px;width: 200px; height: 200px;">
+                        <img src="car/benz.png" width="150px" height="150px">
+                    </td>
+                    <td class="car5" style="border-radius:30px;width: 200px; height: 200px;">
+                        <img src="car/bmw.png" width="100px" height="100px">
+                    </td>
+                    <td class="car6" style="border-radius:30px;width: 200px; height: 200px;">
+                        <img src="car/audi.png" width="200px" height="200px">
+                    </td>
+                    <td class="car7" style="border-radius:30px;width: 200px; height: 200px;">
+                        <img src="car/tedla.png" width="100px" height="100px">
+                    </td>
+                    <td class="car8" style="border-radius:30px;width: 200px; height: 200px;">
+                        <img src="car/lambo.png" width="130px" height="130px">
+                    </td>
+                    <td class="car9" style="border-radius:30px;width: 200px; height: 200px;">
+                        <img src="car/pera.jpg" width="130px" height="130px">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="select_button">
+            <input class="button1" type="button" value="소형차">
+            <input class="button2" type="button" value="중형차">
+            <input class="button3" type="button" value="대형차">
+        </div>
+    </div>
+
+    <!-- 결과보기 버튼 -->
+    <div class="submit_area">
+        <input class="submit" type="submit" value="결과보기">
+    </div>
+</body>
+
+</html>
