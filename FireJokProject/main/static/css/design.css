@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topdar {
+  background-color: #ff470c;
+  color: white;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  position: fixed;
+}
+
+.input_salary {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.salary {
+  font-size: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid gray;
+  text-align: right;
+}
+
+.input_car {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.select_car {
+  width: 700px;
+  height: 230px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.submit_area {
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.submit {
+  font-size: 20px;
+  align-items: center;
+  background-color: #ff470c;
+  color: white;
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.select_button {
+  padding-top: 20px;
+}
+
+.car1 {
+  font-size: 20px;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.button1 {
+  font-size: 20px;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.button2 {
+  font-size: 20px;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.button3 {
+  font-size: 20px;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 100px;
+  display: inline-block;
+}

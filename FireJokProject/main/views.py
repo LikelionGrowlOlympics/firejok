@@ -4,21 +4,21 @@ def home(request):
     return render(request, 'home.html')
 
 def getCarPrice(car):
-    car_category={"BMW":70000000, "BENZ":70000000, "AUDI":100000000, "TES":150000000,
-      " RAM":250000000, "FERA":270000000}
+    car_category={"BMW":7000, "BENZ":7000, "AUDI":10000, "TES":15000,
+      " RAM":25000, "FERA":27000}
     
     return car_category[car]
 
 def getAreaPrice(area):
-    Area_category={"INCEON":360000000, "KANGONE":200000000, "SEJONG":550000000, "BUSAN":330000000,
-      "KYEONPOOK":170000000, "CHOONGNAM":220000000, "DAEJEON":310000000, "CHOONGPOOK":190000000
-      ,"JEONPOOK":200000000, "JEONNAM":190000000, "DAEGU":390000000, "ULSAN":310000000, "GWANGJU":310000000}
+    Area_category={"INCEON":36000, "KANGONE":20000, "SEJONG":55000, "BUSAN":33000,
+      "KYEONPOOK":17000, "CHOONGNAM":22000, "DAEJEON":31000, "CHOONGPOOK":19000
+      ,"JEONPOOK":20000, "JEONNAM":19000, "DAEGU":39000, "ULSAN":31000, "GWANGJU":31000}
     
     return Area_category[area]
 
 
 def calcDday (request):
-    month_pay= request.POST['month_pay']
+    month_pay= request.POST['salary']
     month_spend= request.POST['month_spend']
     car=request.POST['car']
     area=request.POST['area']
@@ -27,6 +27,6 @@ def calcDday (request):
     area_price=getAreaPrice(area)
     total_price= car_price+area_price+goal
     leftMonth= total_price//(month_pay-month_spend)
-    return leftMonth
+    return render(request, 'result.html',{'leftMonth':leftMonth})
 
     
